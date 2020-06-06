@@ -1,5 +1,5 @@
 # Sudoku_Solver
-It solves a 3x3 sudoku using backtracking. I has two versions:
+It solves a 3x3 sudoku using backtracking. It have two versions:
 1. GUI version in which you can play a game.
 2. Command-line version that directly solves the sudoku and prints output.
 
