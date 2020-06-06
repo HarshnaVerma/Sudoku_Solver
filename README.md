@@ -1,5 +1,5 @@
 # Sudoku_Solver
-It solves a 3x3 sudoku, solved using backtracking. It has two versions:
+It is a 3x3 sudoku, solved using backtracking. It has two versions:
 1. GUI version in which you can play a game.
 2. Command-line version that directly solves the sudoku and prints output (solution.py).
 
