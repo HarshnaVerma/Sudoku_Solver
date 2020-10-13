@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+    <changeSet author="system" id="4" failOnError="false">
+        <createTable tableName="warehouse_details">
+            <column name="depotId" type="varchar(36)">
+                <constraints nullable="false" primaryKey="true" unique="true"/>
+            </column>
+            <column name="depotName" type="varchar(36)"/>
+            <column name="depotLatitude" type="varchar(100)"/>
+            <column name="depotLongitude" type="varchar(100)"/>
+            <column name="depotStatus" type="varchar(36)"/>
+            <column name="createdBy" type="varchar(36)"/>
+            <column name="createdOn" type="timestamp"/>
+            <column name="modifiedBy" type="varchar(36)"/>
+            <column name="modifiedOn" type="timestamp"/>
+            <column name="depotNumber" type="varchar(100)"/>
+            <column name="depotAddress" type="varchar(100)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

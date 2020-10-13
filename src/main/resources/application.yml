@@ -1,0 +1,39 @@
+# server
+server:
+  port: 53010
+
+# eureka
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://34.123.15.172:8761/eureka
+
+# spring, postgres, liquibase, jpa, application name
+spring:
+  datasource:
+    url: jdbc:postgresql://a.ts.gmagica.com:5932/tracking_system?currentSchema=warehouse
+    username: gmagica
+    password: builduser@123
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: classpath:/db/changelog/changelog-master.xml
+    liquibase-schema: liquibase
+    enabled: false
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+# other variables
+owner-name: Gmagica
+swagger-title: 'Gmagica Framework - Warehouse Management Service'
+swagger-description: Warehouse Management Service APIs
+swagger-api-version: 1.0
+swagger-api-license: "Apache License - Gmagica"
+swagger-api-term: 'Terms of Use for the Gmagica'
+

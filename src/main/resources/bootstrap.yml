@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: wm-service
+  cloud:
+    config:
+      uri: http://a.ts.gmagica.com:8081
